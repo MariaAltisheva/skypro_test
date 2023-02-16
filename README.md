@@ -34,6 +34,7 @@ PostgreSQL 10
 ---
 1. Склонировать реппозиторий
 2. Установить вирт окружение и зависимости из файла requirements.txt
-3. Применить миграции ./manage.py migrate
-4. Запустите сервер ./manage.py runserver
-5. Создайте пользователя командой ./manage.py createsuperuser
+3. Запустить PostgreSQL с помощью команды docker run --name <имя контейнера> -e POSTGRES_PASSWORD=<пароль> -p 5432:5432 -d postgres"
+4. Применить миграции ./manage.py migrate
+5. Создать пользователя командой ./manage.py createsuperuser 
+6. Запустить сервер ./manage.py runserver
